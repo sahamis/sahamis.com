@@ -71,6 +71,7 @@ a{
   background-color:rgb(113, 113, 148);
   color:rgb(235, 235, 235);
   display:flex;
+  justify-content:center;
   margin-bottom:6vh;
   padding:3vh 4%;
 }
@@ -146,5 +147,3 @@ a{
   padding-left:0.7em;
   margin-left:0.5em;
 }
-
-
