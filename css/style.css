@@ -2,10 +2,15 @@
 body{
   color:rgb(75, 75, 75);
   font-family:helvetica, arial;
-  min-height:100vh;
 }
 .container{
+  display:flex;
+  flex-direction:column;
   max-width:100%;
+  min-height:100vh;
+}
+main{
+  flex:1 1 auto;
 }
 .wrapper{
   padding:0 4%;
@@ -80,7 +85,9 @@ a{
   margin:0;
   margin-right:3%;
 }
-
+.objective-content{
+  max-width:900px;
+}
 
 /*aboutスタイル*/
 .about-section{
@@ -126,6 +133,35 @@ a{
   margin-left:4%;
 }
 
+/*ブログスタイル*/
+.blog-index{
+  margin:8vh auto 12vh;
+  max-width:980px;
+  width:85%;
+}
+.blog-wrapper{
+  display:flex;
+  justify-content: center;
+}
+.post-image img{
+  height:30vh;
+  object-fit:cover;
+  width:100%;
+}
+.blog-recent{
+  order:1;
+  flex:0 0 10em;
+}
+.blog-previews{
+  flex:1;
+  margin-right:5%;
+}
+.post-heading{
+  margin-top:2em;
+}
+.blog-post~.blog-post{
+  margin-top:3vh;
+}
 /*フッタースタイル*/
 .footer{
   align-items:center;
